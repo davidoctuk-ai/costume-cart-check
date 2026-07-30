@@ -3,6 +3,8 @@ import Image from "next/image";
 import { PageShell } from "./components";
 import { guides } from "./content";
 
+const siteBasePath = "/costume-cart-check";
+
 export default function Home() {
   return (
     <PageShell>
@@ -18,7 +20,7 @@ export default function Home() {
         </div>
         <div className="hero-art" aria-label="Theatrical costume planning still life">
           <Image
-            src="/og.png"
+            src={`${siteBasePath}/og.png`}
             alt="Costume planning still life with mask, wig, measuring tape, gloves and checklist"
             width={1536}
             height={1024}
