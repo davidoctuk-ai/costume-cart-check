@@ -25,6 +25,8 @@ test("server-renders the branded homepage without starter content", async () => 
   assert.match(html, /Buy the look/);
   assert.match(html, /Independent buying guides/);
   assert.match(html, /5 August 2026/);
+  assert.match(html, /\/costume-cart-check\/og\.png/);
+  assert.doesNotMatch(html, /(?:src|content)="\/og\.png"/);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/);
 });
 
