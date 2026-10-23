@@ -35,7 +35,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-US">
-      <body className={`${display.variable} ${body.variable}`}>{children}<script defer src="/_vercel/insights/script.js" /></body>
+      <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7069398799077640" crossOrigin="anonymous" />
+      </head>
+      <body className={`${display.variable} ${body.variable}`}>{children}</body>
     </html>
   );
 }
