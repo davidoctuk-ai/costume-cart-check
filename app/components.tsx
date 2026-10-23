@@ -1,11 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 export function SiteHeader() {
   return (
     <header className="site-header">
       <Link className="brand" href="/" aria-label="Costume Cart Check home">
-        <span className="brand-mark" aria-hidden="true">C</span>
+        <Image className="brand-logo" src="/logo-mark.png" alt="" width={42} height={42} priority />
         <span>Costume Cart Check</span>
       </Link>
       <nav aria-label="Main navigation">
@@ -31,7 +32,7 @@ export function SiteFooter() {
         <Link href="/contact">Contact</Link>
         <Link href="/faq">FAQ</Link>
       </nav>
-      <p className="fine-print">Pre-launch edition · No advertiser-specific affiliate links are live.</p>
+      <p className="fine-print">Affiliate links are clearly labelled and may earn us a commission at no extra cost to you.</p>
     </footer>
   );
 }

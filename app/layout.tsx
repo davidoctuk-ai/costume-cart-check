@@ -7,15 +7,16 @@ const body = Inter({ subsets: ["latin"], variable: "--font-body" });
 
 const title = "Costume Cart Check | Buy the look. Check the details.";
 const description = "Independent US-focused buying guides for costumes, cosplay accessories, wigs, props, makeup and collectibles.";
-const siteBasePath = "/costume-cart-check";
+const siteBasePath = "";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://davidoctuk-ai.github.io/costume-cart-check"),
+  metadataBase: new URL("https://costume-cart-check.vercel.app"),
   title,
   description,
   icons: {
-    icon: `${siteBasePath}/favicon.svg`,
-    shortcut: `${siteBasePath}/favicon.svg`,
+    icon: `${siteBasePath}/favicon.ico`,
+    shortcut: `${siteBasePath}/favicon.ico`,
+    apple: `${siteBasePath}/apple-touch-icon.png`,
   },
   openGraph: {
     title,
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-US">
-      <body className={`${display.variable} ${body.variable}`}>{children}</body>
+      <body className={`${display.variable} ${body.variable}`}>{children}<script defer src="/_vercel/insights/script.js" /></body>
     </html>
   );
 }
