@@ -22,6 +22,7 @@ p { margin: 0; }
 .site-header { width: min(1180px, calc(100% - 40px)); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--line); }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; font-family: var(--font-display); font-weight: 700; font-size: 1.35rem; }
 .brand-mark { display: grid; place-items: center; width: 36px; height: 36px; background: var(--plum); color: var(--paper); border-radius: 50% 50% 46% 46%; border: 1px solid var(--gold); }
+.brand-logo { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; border: 1px solid var(--gold); }
 .site-header nav, .site-footer nav { display: flex; flex-wrap: wrap; gap: 22px; font-size: 0.86rem; font-weight: 650; }
 .site-header nav a, .site-footer nav a { text-decoration: none; }
 .site-header nav a:hover, .site-footer nav a:hover, .text-link:hover { color: var(--wine); }
@@ -77,6 +78,8 @@ p { margin: 0; }
 .article-body section { padding: 38px 0; border-bottom: 1px solid var(--line); }
 .article-body h2 { font-size: 2.6rem; margin-bottom: 18px; }
 .article-body p { color: #51474a; font-size: 1.06rem; }
+.article-body .affiliate-offer { margin-top: 38px; padding: 34px; border: 1px solid var(--line); border-top: 5px solid var(--gold); background: rgba(187,138,67,.13); }
+.affiliate-offer .button { margin-top: 16px; }
 .article-end { margin-top: 56px; padding: 34px; background: rgba(187,138,67,.13); }
 .article-end .button { margin-top: 24px; }
 

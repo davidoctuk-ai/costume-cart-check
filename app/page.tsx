@@ -3,7 +3,7 @@ import Image from "next/image";
 import { PageShell } from "./components";
 import { guides } from "./content";
 
-const siteBasePath = "/costume-cart-check";
+const siteBasePath = "";
 
 export default function Home() {
   return (
@@ -69,8 +69,8 @@ export default function Home() {
 
       <section className="launch-note">
         <p className="eyebrow">Transparent from day one</p>
-        <h2>Approved relationship. Links deliberately not rushed.</h2>
-        <p>Our Abracadabra NYC relationship through CJ is approved. Advertiser-specific links will only be activated after promotional-property registration and final compliance checks, and not before 5 August 2026.</p>
+        <h2>Approved relationship. Affiliate links disclosed.</h2>
+        <p>Costume Cart Check participates in Abracadabra NYC&apos;s affiliate programme through CJ. Sponsored links are labelled before you click; eligible purchases may earn us a commission at no extra cost to you.</p>
         <Link className="text-link" href="/affiliate-disclosure">Read the full disclosure →</Link>
       </section>
     </PageShell>

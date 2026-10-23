@@ -45,6 +45,14 @@ export default async function DetailPage({ params }: { params: Promise<{ slug: s
               <p>{section.body}</p>
             </section>
           ))}
+          {guide?.affiliate && (
+            <section className="affiliate-offer" aria-label="Sponsored retailer link">
+              <p className="eyebrow">Optional retailer link</p>
+              <h2>Ready to compare live options?</h2>
+              <p>{guide.affiliate.disclosure}</p>
+              <a className="button primary" href={guide.affiliate.href} target="_blank" rel="sponsored nofollow noopener noreferrer">{guide.affiliate.label}</a>
+            </section>
+          )}
         </div>
         <div className="article-end">
           <p>Product details and policies can change. Verify the current listing and terms before purchasing.</p>

@@ -6,6 +6,7 @@ export type Guide = {
   readTime: string;
   checklist: string[];
   sections: { title: string; body: string }[];
+  affiliate?: { href: string; label: string; disclosure: string };
 };
 
 export const guides: Guide[] = [
@@ -21,6 +22,11 @@ export const guides: Guide[] = [
       { title: "Measure, do not guess", body: "Use a soft tape over the underclothes you expect to wear. Record chest, waist, hip, inseam and height, then compare those numbers with the retailer’s current chart." },
       { title: "Leave a delivery buffer", body: "Event dates are unforgiving. Allow time to try the costume on and correct a minor fit issue. Treat an estimate as an estimate, especially during seasonal peaks." },
     ],
+    affiliate: {
+      href: "/go/abracadabra.html",
+      label: "Browse costumes at Abracadabra NYC — affiliate link",
+      disclosure: "If you buy through this sponsored link, Costume Cart Check may earn a commission at no extra cost to you. Verify the retailer's live price, stock, sizing, delivery and returns before ordering.",
+    },
   },
   {
     slug: "costume-sizing-fit",
@@ -149,7 +155,7 @@ export const pages = {
     sections: [
       { title: "The criteria", body: "We look for clear inclusions, useful sizing details, material information, delivery context, return terms and safety considerations. We do not invent scores, scarcity or hands-on testing." },
       { title: "Commercial relationships", body: "A merchant relationship does not guarantee coverage or a positive conclusion. Editorial checks come first, and paid placement is not part of this site." },
-      { title: "Current launch status", body: "Costume Cart Check has an approved relationship with Abracadabra NYC through CJ. Advertiser-specific affiliate links are not live while promotional-property registration and final compliance checks are pending, and not before 5 August 2026." },
+      { title: "Current commercial status", body: "Costume Cart Check participates in the Abracadabra NYC affiliate programme through CJ. Clearly labelled sponsored links may earn commission on eligible purchases, at no extra cost to the shopper." },
     ],
   },
   about: {
@@ -167,7 +173,7 @@ export const pages = {
     title: "Questions, answered plainly",
     description: "The essentials on our content, links and launch status.",
     sections: [
-      { title: "Are affiliate links live?", body: "No. The advertiser relationship is approved, but tracking links will only be added after the site is registered as a promotional property and final compliance checks are complete, no earlier than 5 August 2026." },
+      { title: "Are affiliate links live?", body: "Yes. The costume buying checklist contains a clearly labelled Abracadabra NYC affiliate link generated for this site's registered CJ promotional property." },
       { title: "Do links change the price?", body: "A standard affiliate link ordinarily does not add a separate charge to a shopper. Always rely on the merchant checkout for the current total and terms." },
       { title: "Are you the retailer?", body: "No. Costume Cart Check is an independent guide. Product availability, fulfilment, returns and support are handled under the retailer’s current terms." },
       { title: "Are the guides professional advice?", body: "No. The guides are general consumer information. Follow product labels, venue rules and qualified professional advice where appropriate." },
@@ -187,8 +193,8 @@ export const pages = {
     title: "Affiliate disclosure",
     description: "Clear commercial context, placed where readers can see it.",
     sections: [
-      { title: "Current status", body: "Costume Cart Check has an approved advertiser relationship with Abracadabra NYC through CJ, but no advertiser-specific affiliate tracking links are live during the pre-launch compliance hold." },
-      { title: "When links go live", body: "Some links may earn Costume Cart Check a commission if a reader makes an eligible purchase, at no separately added charge from us. A clear disclosure will appear near those links." },
+      { title: "Current status", body: "Costume Cart Check participates in the Abracadabra NYC affiliate programme through CJ. Some clearly labelled sponsored links may earn us a commission on eligible purchases, at no extra cost to the shopper." },
+      { title: "How links are shown", body: "Affiliate links are labelled before you click, include a nearby commission disclosure and use the appropriate sponsored-link attribute." },
       { title: "Editorial independence", body: "Commercial relationships do not buy a positive recommendation. We aim to distinguish verified facts, practical judgement and any limitations in our information." },
     ],
   },
@@ -199,7 +205,7 @@ export const pages = {
     sections: [
       { title: "Data we request", body: "The site currently has no account, newsletter, contact form, comments or checkout, and does not intentionally ask visitors for personal information." },
       { title: "Technical records", body: "The hosting service may process basic technical logs needed to deliver and protect the site. Costume Cart Check does not currently add advertising or behavioural analytics cookies." },
-      { title: "Outbound links", body: "When affiliate links are introduced, external merchants and the affiliate network may process click and transaction information under their own notices. This page will be updated before those links are activated." },
+      { title: "Outbound links", body: "When you follow an affiliate link, the external merchant and affiliate network may process click and transaction information under their own privacy notices." },
     ],
   },
   terms: {
