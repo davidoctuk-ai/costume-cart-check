@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://costume-cart-check.vercel.app/sitemap.xml
