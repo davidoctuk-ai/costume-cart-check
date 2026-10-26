@@ -53,6 +53,19 @@ export default async function DetailPage({ params }: { params: Promise<{ slug: s
               <a className="button primary" href={guide.affiliate.href} target="_blank" rel="sponsored nofollow noopener noreferrer">{guide.affiliate.label}</a>
             </section>
           )}
+          {guide?.related && (
+            <section>
+              <h2>Keep planning</h2>
+              <ul>{guide.related.map((item) => <li key={item.href}><Link href={item.href}>{item.label}</Link></li>)}</ul>
+            </section>
+          )}
+          {guide?.sources && (
+            <section>
+              <h2>Sources</h2>
+              <p>Market context checked 26 October 2026. Product details and retailer terms must be verified at the point of purchase.</p>
+              <ul>{guide.sources.map((source) => <li key={source.href}><a href={source.href} target="_blank" rel="noopener noreferrer">{source.label}</a></li>)}</ul>
+            </section>
+          )}
         </div>
         <div className="article-end">
           <p>Product details and policies can change. Verify the current listing and terms before purchasing.</p>
