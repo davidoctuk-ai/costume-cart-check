@@ -7,9 +7,43 @@ export type Guide = {
   checklist: string[];
   sections: { title: string; body: string }[];
   affiliate?: { href: string; label: string; disclosure: string };
+  sources?: { label: string; href: string }[];
+  related?: { label: string; href: string }[];
 };
 
 export const guides: Guide[] = [
+  {
+    slug: "last-minute-halloween-costume-checklist",
+    eyebrow: "Seasonal · Last minute",
+    title: "Last-minute Halloween costume checklist",
+    description: "A practical five-day plan for choosing, checking and rehearsing a costume without panic buying.",
+    readTime: "8 min read",
+    checklist: ["Confirm the event rules and weather", "Build around one recognisable detail", "Use items you already own first", "Check live collection or delivery timing", "Rehearse the complete outfit before the event"],
+    sections: [
+      { title: "Start with the deadline, not the character", body: "Write down when you must leave for the event, then reserve a separate fitting deadline at least one day earlier. If an online order cannot arrive before that fitting deadline, treat it as unavailable and switch to a local, borrowed or wardrobe-led plan." },
+      { title: "Choose one strong visual signal", body: "A last-minute costume does not need ten matching pieces. Pick the colour, silhouette, prop or hairstyle that makes the idea readable, then use neutral clothes around it. This keeps the shopping list short and makes missing accessories less important." },
+      { title: "Shop your wardrobe before a storefront", body: "Lay out useful base layers, shoes, jackets and accessories you already own. Borrowing or swapping a clean item can reduce cost and waste, but check fit, permission and condition just as carefully as you would with a purchase." },
+      { title: "Compare the complete cost", body: "Add the costume, missing accessories, delivery, tax, makeup, batteries and any weather layer. A low headline price can become poor value when the outfit still needs several essential pieces." },
+      { title: "Treat delivery estimates as uncertain", body: "Separate seller processing time from carrier transit time and allow for seasonal volume. Keep a no-delivery backup that can work even if the parcel is delayed, incomplete or unsuitable." },
+      { title: "Run a twenty-minute rehearsal", body: "Wear the complete look indoors and outdoors if appropriate. Sit, walk, use stairs and test visibility, temperature, footwear and pockets. Remove or change anything sharp, unstable, restrictive or incompatible with the venue rules." },
+      { title: "Keep the idea useful after Halloween", body: "Store reusable pieces clean and labelled, donate suitable items promptly or return eligible unused goods under the seller's current policy. A flexible base layer or accessory is usually more useful than a highly specific item worn once." },
+      { title: "Why this guide is timely", body: "The National Retail Federation reported in September 2026 that 71% of Halloween shoppers expected to buy costumes and that value remained important. Its October trend update also found strong interest in classic, superhero and personalised costume ideas. Those figures describe the market; they do not predict any individual product's availability, price or suitability." },
+    ],
+    affiliate: {
+      href: "https://www.kqzyfj.com/click-101845348-17267208?sid=last_minute_halloween&url=https%3A%2F%2Fabracadabranyc.com%2Fcollections%2Fcostumes",
+      label: "Compare current costumes at Abracadabra NYC — affiliate link",
+      disclosure: "If you buy through this sponsored link, Costume Cart Check may earn a commission at no extra cost to you. Stock, collection options, delivery dates, sizing and return eligibility can change; confirm them directly with the retailer before ordering.",
+    },
+    sources: [
+      { label: "National Retail Federation: 2026 Halloween spending survey", href: "https://nrf.com/media-center/press-releases/nrf-halloween-survey-shows-consumer-spending-expected-to-reach-13-5-billion" },
+      { label: "National Retail Federation: Top Halloween costume trends for 2026", href: "https://nrf.com/blog/top-halloween-costume-trends-for-2026" },
+    ],
+    related: [
+      { label: "Plan a Halloween costume without the rush", href: "/halloween-costume-planning" },
+      { label: "Shipping and returns: what to check", href: "/costume-shipping-returns" },
+      { label: "Build a costume budget", href: "/costume-budget-guide" },
+    ],
+  },
   {
     slug: "costume-buying-checklist",
     eyebrow: "Start here",
@@ -23,7 +57,7 @@ export const guides: Guide[] = [
       { title: "Leave a delivery buffer", body: "Event dates are unforgiving. Allow time to try the costume on and correct a minor fit issue. Treat an estimate as an estimate, especially during seasonal peaks." },
     ],
     affiliate: {
-      href: "/go/abracadabra.html",
+      href: "https://www.kqzyfj.com/click-101845348-17267208?sid=costume_cart_check&url=https%3A%2F%2Fabracadabranyc.com%2Fcollections%2Fcostumes",
       label: "Browse costumes at Abracadabra NYC — affiliate link",
       disclosure: "If you buy through this sponsored link, Costume Cart Check may earn a commission at no extra cost to you. Verify the retailer's live price, stock, sizing, delivery and returns before ordering.",
     },
